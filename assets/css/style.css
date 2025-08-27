@@ -1052,3 +1052,11 @@ body.menu-open {
 body.menu-open {
   overflow: hidden;
 }
+
+/* OCULTAR MENÚ Y BOTÓN DE MENÚ EN CELULAR */
+@media (max-width: 768px) {
+  .navbar__menu,
+  .btn__open {
+    display: none !important;
+  }
+}
