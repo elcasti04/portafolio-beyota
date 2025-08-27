@@ -934,3 +934,57 @@ html {
 		}
 	}
 }
+
+/* Ajustes para el switch de idioma en móviles */
+.navbar__toggle--language {
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.navbar__toggle--language-input {
+	width: 40px;
+	height: 20px;
+	accent-color: #09f;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.navbar__toggles {
+		flex-direction: row;
+		gap: 1rem;
+		justify-content: flex-end;
+		width: 100%;
+	}
+	.navbar__toggle--language {
+		margin-left: 0.5rem;
+	}
+}
+
+/* Opcional: mejora visual del switch */
+.navbar__toggle--language-label {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background: #eee;
+	border-radius: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.navbar__toggle--language-input:checked + .navbar__toggle--language-label {
+	background: #09f;
+}
+.navbar__toggle--language-label::after {
+	content: '';
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	width: 14px;
+	height: 14px;
+	background: #fff;
+	border-radius: 50%;
+	transition: 0.2s;
+}
+.navbar__toggle--language-input:checked
+	+ .navbar__toggle--language-label::after {
+	left: 23px;
+}
