@@ -1017,46 +1017,46 @@ html {
 
 /* Menú móvil tipo dropdown superior */
 @media (max-width: 768px) {
-  .navbar__menu {
-    position: absolute;
-    top: 60px; /* Ajusta según la altura de tu navbar */
-    right: 10px;
-    left: 10px;
-    width: auto;
-    min-width: 200px;
-    max-width: 95vw;
-    background: var(--bg-color-section2, #fff);
-    z-index: 1000;
-    border-radius: 12px;
-    box-shadow: var(--box-shadow, 0 4px 16px rgba(0,0,0,0.1));
-    transition: all 0.3s;
-    display: none;
-    padding: 1.5rem 1rem;
-  }
-  .navbar__menu.active {
-    display: block;
-  }
-  .navbar__list {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
-  }
+	.navbar__menu {
+		position: absolute;
+		top: 60px; /* Ajusta según la altura de tu navbar */
+		right: 10px;
+		left: 10px;
+		width: auto;
+		min-width: 200px;
+		max-width: 95vw;
+		background: var(--bg-color-section2, #fff);
+		z-index: 1000;
+		border-radius: 12px;
+		box-shadow: var(--box-shadow, 0 4px 16px rgba(0, 0, 0, 0.1));
+		transition: all 0.3s;
+		display: none;
+		padding: 1.5rem 1rem;
+	}
+	.navbar__menu.active {
+		display: block;
+	}
+	.navbar__list {
+		flex-direction: column;
+		gap: 1.5rem;
+		align-items: flex-start;
+	}
 }
 
 /* Asegúrate de que el menú no tape el contenido */
 body.menu-open {
-  overflow: auto;
+	overflow: auto;
 }
 
 /* Bloqueo del scroll cuando el menú está abierto */
 body.menu-open {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 /* OCULTAR MENÚ Y BOTÓN DE MENÚ EN CELULAR */
 @media (max-width: 768px) {
-  .navbar__menu,
-  .btn__open {
-    display: none !important;
-  }
+	.navbar__menu,
+	.btn__open {
+		display: none !important;
+	}
 }
