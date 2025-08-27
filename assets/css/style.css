@@ -1060,3 +1060,21 @@ body.menu-open {
 		display: none !important;
 	}
 }
+
+/* Imagen de perfil responsive en móvil */
+@media (max-width: 600px) {
+  .home__image img {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .home__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
