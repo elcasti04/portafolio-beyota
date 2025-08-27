@@ -12,27 +12,27 @@ parallax();
 activeMenu();
 sendEmail();
 
-document.querySelectorAll('.navbar__menu .navbar__list a').forEach((link) => {
-	link.addEventListener('click', () => {
-		if (window.innerWidth <= 768) {
-			window.location.hash = '';
-		}
-	});
-});
-
 const menu = document.getElementById('nav');
 const openBtn = document.querySelector('.btn__open');
 const closeBtn = document.querySelector('.btn__close');
 
 if (openBtn && menu) {
-	openBtn.addEventListener('click', () => {
-		document.body.classList.add('menu-open');
-	});
+    openBtn.addEventListener('click', () => {
+        menu.classList.add('active');
+    });
 }
 if (closeBtn && menu) {
-	closeBtn.addEventListener('click', (e) => {
-		e.preventDefault(); // Evita que el enlace navegue
-		document.body.classList.remove('menu-open');
-		menu.classList.remove('active'); // Opcional: si usas una clase para mostrar/ocultar el menú
-	});
+    closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        menu.classList.remove('active');
+    });
 }
+
+// Cierra el menú al hacer click en un enlace (en móvil)
+document.querySelectorAll('.navbar__menu .navbar__list a').forEach((link) => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            menu.classList.remove('active');
+        }
+    });
+});
