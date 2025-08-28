@@ -84,7 +84,12 @@ html {
 
 	img {
 		display: block;
-		max-width: 100%;
+		max-width: 90%;
+		height: auto;
+	}
+
+	.home__image img {
+		width: 30%;
 		@media (max-width: 768px) {
 			.home__image img {
 				width: 50%;
