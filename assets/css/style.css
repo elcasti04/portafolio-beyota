@@ -85,6 +85,11 @@ html {
 	img {
 		display: block;
 		max-width: 100%;
+		@media (max-width: 768px) {
+			.home__image img {
+				width: 50%;
+			}
+		}
 	}
 
 	/* Darkmode function */
@@ -1014,7 +1019,6 @@ html {
 		align-items: center;
 	}
 }
-
 
 /* OCULTAR MENÚ  */
 @media (max-width: 768px) {
