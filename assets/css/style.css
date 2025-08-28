@@ -84,7 +84,7 @@ html {
 
 	img {
 		display: block;
-		max-width: 90%;
+		max-width: 100%;
 	}
 
 	/* Darkmode function */
@@ -454,20 +454,9 @@ html {
 		row-gap: 2rem;
 		padding: var(--header-height) 0 3rem;
 		.home__image {
-			width: clamp(min(320px, 90%), 80vw, 445px);
-			height: 60%;
+			width: clamp(min(350px, 90%), 80vw, 445px);
+			height: auto;
 			margin: 0 auto;
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-			.home__image img {
-				width: 100%; 
-				height: auto; 
-			@media (max-width: 768px) {
-				.home__image img {
-					width: 50%; 
-			}
 		}
 		.home__social {
 			position: absolute;
@@ -1025,6 +1014,7 @@ html {
 		align-items: center;
 	}
 }
+
 
 /* OCULTAR MENÚ  */
 @media (max-width: 768px) {
