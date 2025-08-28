@@ -454,7 +454,7 @@ html {
 		row-gap: 2rem;
 		padding: var(--header-height) 0 3rem;
 		.home__image {
-			width: clamp(min(350px, 90%), 80vw, 445px);
+			width: clamp(min(320px, 90%), 80vw, 445px);
 			height: 60%;
 			margin: 0 auto;
 		}
