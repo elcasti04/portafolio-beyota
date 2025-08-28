@@ -455,8 +455,8 @@ html {
 		padding: var(--header-height) 0 3rem;
 		.home__image {
 			width: clamp(min(350px, 90%), 80vw, 445px);
-			height: auto;
-			margin: 0 auto;
+			height: 60%;
+			margin: 60%;
 		}
 		.home__social {
 			position: absolute;
