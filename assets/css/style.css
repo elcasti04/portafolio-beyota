@@ -456,7 +456,7 @@ html {
 		.home__image {
 			width: clamp(min(350px, 90%), 80vw, 445px);
 			height: 60%;
-			margin: 60%;
+			margin: 0 auto;
 		}
 		.home__social {
 			position: absolute;
