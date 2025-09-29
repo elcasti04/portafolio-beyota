@@ -104,6 +104,11 @@ html {
 	&:has([name='color-scheme']) {
 		color-scheme: light;
 	}
+
+	.projects__image img {
+		width: 30%;
+		height: auto;
+	}
 }
 
 /* =================REUSABLE CSS CLASSES=================== */
