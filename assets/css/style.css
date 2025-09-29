@@ -933,6 +933,8 @@ html {
 		/* Estilos para dispositivos móviles */
 		.home__container {
 			flex-direction: column;
+			display: flex;
+			align-items: center;
 		}
 		.home__image {
 			width: 100%;
